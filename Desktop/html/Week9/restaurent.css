@@ -1,0 +1,466 @@
+.topbar{
+    height: 30px;
+    background: rgb(94, 58, 58);
+}
+.topbar1{
+    width:75%;
+    margin:0 auto;
+    padding:5px 0;
+}
+.icon a{
+    margin:0 5px;
+    color: white;
+}
+.icon:hover a{
+    color:rgba(255, 255, 255, 0.685);
+    transition:0.3s
+}
+nav{
+    margin-top:10px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight:600;
+}
+nav ul li{
+    cursor:pointer;
+}
+nav ul li.items{
+    width:auto;
+    margin: 0 15px;
+    text-align:center;
+    order:3;
+}
+nav ul li a{
+    color:rgb(20, 19, 19);
+    font-size:16px;
+}
+nav ul li:hover a{
+    color:rgb(185, 1, 1);
+}
+nav ul li.logo{
+    flex: 1;
+    user-select: none;
+}
+nav ul li img{
+    width: 200px;
+    height:120px;
+}
+nav ul li.btn{
+    display:none;
+}
+
+
+@media all and (max-width: 800px) {
+    .word, .logo{
+        margin:0 auto;
+    }
+    nav{
+        padding: 5px 30px;
+    }
+    nav ul li.items{
+        width:100%;
+        display:none;
+    }
+    nav ul li.items.show{
+        display:block;
+    }
+    nav ul li.btn{
+        display:block;
+    }
+
+}
+/*restaurent */
+*{
+    font-family: "Montserrat", sans-serif;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.font-size-50{
+    font-size:50px;
+}
+.m-b-20{
+    margin-bottom:20%;
+}
+.slide-size{
+    width: 100%;
+    height:650px;
+}
+.carousel-indicators li {
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50%;
+    border:3px solid white !important;
+    background:transparent!important;
+}
+/*slide's css */
+.ourstory{
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/bg-pattern.jpg);
+    padding:50px 0;
+}
+.storytitle{
+    font-family: 'Charm';
+    font-size:30px;
+    color:rgb(185, 185, 22)
+}
+.storysubtitle{
+    font-size:45px;
+}
+.right-img{
+    max-width:100%
+}
+
+/* ourstory's css */
+.ourmenu{
+    margin-bottom:180px;
+    margin-top:140px;
+}
+.width-hr{
+    width:10%;
+    height:0.5px;
+}
+.black-layer{
+    background:rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top:0
+}
+.bottom-item{
+    position:relative;
+    overflow: hidden;
+    margin-top:20px;
+    height:270px
+}
+.bottom-item:hover .box{
+    bottom:45px;
+    transition:0.3s;
+    position:absolute;
+}
+.bottom-item:hover .item-img{
+    transform:scale(1.1);
+    transition:0.4s;
+}
+.item-img{
+    width: 100%;
+    height:100%;
+    transition:0.4s;
+}
+.box{
+    position:absolute;
+    bottom: 25px;
+    left: 40px;
+    background:white;
+    transition:0.3s;
+    padding:10px 20px;
+}
+.boxtitle{
+    font-size:20px;
+}
+@media screen and (max-width: 548px) {
+    .boxtitle{
+        font-size:15px;
+        font-weight: bolder;
+        color:black
+    }
+    .boxsubtitle{
+        font-size:13px;
+        color:black
+    }
+}
+/* ourmenu's css*/
+
+.background-ready{
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/italian-food-background-1.jpg);
+    width:100%;
+    height:550px;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: 0 -90px;
+    margin-bottom:60px;
+}
+.layoutbg{
+    background: rgba(0, 0, 0, 0.5);
+}
+.container__box{
+    width:70%;
+    height:40%;
+    margin:0 auto;
+    transform:translateY(50%);
+}
+.container__title{
+    font-size:40px
+}
+.container__p{
+    font-size:20px;
+}
+.container__order{
+    width: 175px;
+    height:40px;
+    background:rgb(145, 67, 22);
+    margin-top:20px;
+}
+.container__order__word{
+    position:absolute;
+    left:28px;
+    transition:0.3s;
+    font-size:15px;
+}
+.container__order__iconleft{
+    position: absolute;
+    right:8px;
+    visibility: hidden;
+    font-size:17px
+}
+.container__order:hover{
+    background:rgb(102, 47, 15);
+}
+.container__order:hover .container__order__word{
+    left:20px;
+    transition: 0.3s;
+}
+.container__order:hover .container__order__iconleft{
+    visibility: visible;
+    transition:0.2s;
+}
+@media screen and (max-width: 578px) {
+    .container__title{
+        font-size:30px
+    }
+    .container__p{
+        font-size:20px;
+    }
+    .container__order__word{
+        font-size:13px;
+    }
+    .container__order{
+        width:150px
+    }
+}
+/* readymenu's css */
+.food-menu{
+    font-size:11px;
+    color:#999
+}
+.name-food{
+    color:rgb(150, 67, 19);
+    margin-bottom: 20px;
+}
+.name-food:hover {
+    color:rgb(68, 30, 8);
+}
+.img-border{
+    height:300px;
+    overflow: hidden;
+    width: 100%;
+}
+.bottom-gallery{
+    margin-top:50px;
+    
+}
+.bottom-gallery-item{
+    box-shadow:0 2px 5px #999;
+    transition: 0.5s;
+    margin-bottom:20px;
+    padding:0;
+}
+.bottom-gallery-item:hover {
+    box-shadow:0px 4px 13px;
+    transition:0.5s
+}
+.bottom-gallery-item img{
+    transition:0.5s
+}
+.bottom-gallery-item:hover img{
+    transform:scale(1.1);
+    transition:0.5s
+}
+.see-all{
+    width:140px;
+    height:40px;
+    background:rgb(145, 67, 22);
+    border-radius: 5px;
+}
+.seeall-word{
+    position:absolute;
+    left:30px;
+    transition:0.3s;
+}
+.icon-left{
+    position: absolute;
+    right:17px;
+    visibility: hidden;
+   transition: .1s;
+   font-size:9px
+}
+.see-all:hover{
+    background:rgb(82, 38, 12);
+    transition:0.2s
+}
+.see-all:hover .seeall-word{
+    left:20px;
+    transition: 0.3s;
+}
+.see-all:hover .icon-left{
+    visibility: visible;
+    transition:0.3s;
+}
+/*ourgallery's css */
+
+.bg-order{
+    background-image:url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/bg-pattern.jpg);
+    padding:40px 0;
+    margin:30px 0;
+}
+.container__form{
+    padding:20px 20px;
+}
+.fonts-25{
+    font-size:25px;
+}
+.form__name{
+    width:47%;
+    height:35px;
+    padding:0 10px;
+    margin-bottom:15px;
+    box-shadow: inset 0 0 0px #ffffff;
+}
+.form__name:hover, .form__address:hover{
+    box-shadow:none;
+}
+.form__address{
+    height:130px;
+    padding:0 10px;
+    box-shadow: inset 0 0 0px #ffffff;
+}
+.container__order1{
+    width: 60px;
+    height: 35px;
+    background:rgb(145, 67, 22);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    transition:0.3s;
+    border:0
+}
+.container__order1:hover{
+    background:rgb(102, 47, 15);
+    transition:0.3s
+}
+.word{
+    top:0
+}
+.pr-0{
+    padding-right:0;
+}
+.pl-0{
+    padding-left:0;
+}
+@media screen and (max-width: 578px) {
+    .form__name{
+        width:100%;
+    }
+}
+/* ordermenu's css */
+.khamphacs{
+    padding:40px 0;
+}
+.img-border1{
+    overflow: hidden;
+
+}
+.khamphacs-item{
+    padding-bottom: 20px;
+    box-shadow:0 2px 5px #999;
+    transition: 0.5s;
+}
+.khamphacs-item:hover{
+    box-shadow:0 2px 15px #999;
+    transition: 0.5s;
+}
+.khamphacs-item:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.see-next{
+    width:80px;
+    height:30px;
+    background: rgb(129, 85, 20);
+    font-size:14px;
+    padding:5px 0;
+    transition: .3s;
+}
+.see-next:hover{
+    background:rgb(87, 58, 14);
+    transition: .3s;
+}
+.bg-img{
+    transition:0.5s
+}
+.date{
+    width:45px;
+    height:35px;
+    background:rgb(129, 85, 20);
+    line-height: 12px;
+    padding:5px 0;
+    top:30px;
+}
+.th8{
+    font-size:13px
+}
+/* khamphacs css */
+.footer-1 {
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/09/travel-landscape-01.jpg);
+    padding-top: 20px;
+    margin-top:40px;
+    font-size:15px;
+}
+.last-footer{
+    height:50px;
+    background:rgb(88, 88, 88);
+    padding:12px 0;
+    color:gray;
+}
+.column{
+    padding-right:25px;
+    margin-bottom:30px;
+}
+.border-b-2{
+    width:25px;
+    height:3px;
+    background:gray
+}
+.border-b{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.486);
+    padding:10px 0;
+}
+@media screen and (max-width: 768px) {
+    .last-footer-word{
+        text-align: center;
+    }
+}
+/* footer css */
+.black{
+    height:100%;
+    position:absolute;
+    background:black;
+    top:0;
+    display: none;
+}
+.black-1{
+    background:black;
+    left:0;
+    width:40%;
+}
+.black-2{
+    background:rgba(0, 0, 0, 0.5);
+    right:0;
+    width:60%;
+}
+div.black.hienthi{
+    display:block;
+}
